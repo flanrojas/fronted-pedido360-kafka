@@ -1,0 +1,35 @@
+:root {
+  --fondo: #f6f7f9;
+  --tarjeta: #fff;
+  --texto: #1f2933;
+  --suave: #616e7c;
+  --borde: #e4e7eb;
+  --acento: #8a5a00;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, 'Segoe UI', Arial, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+}
+
+main { padding: 16px 24px; display: grid; gap: 16px; max-width: 1200px; margin: 0 auto; }
+.fila { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+
+.tarjeta { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 10px; padding: 16px; }
+.tarjeta h2 { margin: 0 0 4px; font-size: 16px; }
+.tarjeta .sub { margin: 0 0 12px; color: var(--suave); font-size: 13px; }
+
+.numero { font-size: 30px; font-weight: 700; color: var(--acento); }
+.etiqueta { color: var(--suave); font-size: 13px; }
+
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--borde); }
+th { color: var(--suave); font-weight: 600; }
+td.num, th.num { text-align: right; }
+
+.vacio { color: var(--suave); font-size: 14px; }
+.error { color: #b42318; font-size: 14px; margin: 0; }
